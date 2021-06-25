@@ -100,12 +100,11 @@ export default {
   font-weight: 600;
 
   .title {
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: 8vw;
   }
 
   .subtitle {
-    font-size: 20px;
+    font-size: 1vw;
     letter-spacing: 20px;
   }
 }
