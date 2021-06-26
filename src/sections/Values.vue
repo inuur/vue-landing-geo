@@ -54,6 +54,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 40vh;
 
   & > img {
     height: 70%;

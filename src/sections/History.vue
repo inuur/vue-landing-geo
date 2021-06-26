@@ -76,7 +76,7 @@ export default {
 
     & > .image > img {
       width: 20vw;
-      height: 70%;
+      height: 65%;
       border: 1px solid rgb(0, 0, 0, 0.2);
     }
 
