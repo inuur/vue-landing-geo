@@ -1,5 +1,8 @@
 <template>
 <div class="history">
+  <div class="company_icon">
+    <img src="../assets/icons/coloredIcon.svg" alt="">
+  </div>
   <div class="history-wrapper">
     <div class="history_title">
       <div class="title">ИСТОРИЯ СОЗДАНИЯ</div>
@@ -37,6 +40,12 @@ export default {
 
 <style scoped lang="scss">
 
+.company_icon > img {
+  width: 15vw;
+  display: block;
+  margin: 1rem auto auto;
+}
+
 .history_title {
   padding-left: 5rem;
   font-weight: 600;
@@ -54,6 +63,7 @@ export default {
 .history {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   & > * {
     width: 100%;
@@ -66,7 +76,7 @@ export default {
 
     & > .image > img {
       width: 20vw;
-      height: 80%;
+      height: 70%;
       border: 1px solid rgb(0, 0, 0, 0.2);
     }
 
