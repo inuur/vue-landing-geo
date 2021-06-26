@@ -70,7 +70,7 @@ export default {
   text-align: center;
   background-color: rgb(138, 144, 154);
   width: 90%;
-  margin: auto;
+  margin: 4rem auto auto;
   font-size: 2vw;
   color: white;
   font-weight: 600;
