@@ -6,6 +6,7 @@
       <Values></Values>
       <History></History>
       <Tasks></Tasks>
+      <Benefits></Benefits>
     </section>
   </div>
 </template>
@@ -16,10 +17,12 @@ import Mission from "../sections/Mission";
 import History from "../sections/History";
 import Tasks from "../sections/Tasks";
 import Values from "../sections/Values";
+import Benefits from "../sections/Benefits";
 
 export default {
   name: "MainPage",
   components: {
+    Benefits,
     Values,
     Tasks,
     History,
