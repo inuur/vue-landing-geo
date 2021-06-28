@@ -9,7 +9,10 @@
     <div class="benefits_flex">
       <div class="benefits_block">
         <div class="list-wrapper">
-          <div class="list_title left_title">Экономия, быстрота</div>
+          <div class="list_title-wrapper">
+            <div class="left_icon"></div>
+            <div class="list_title left_title">Экономия, быстрота</div>
+          </div>
           <div class="left_list">
             <ul>
               <li>Без остановки скважин</li>
@@ -19,7 +22,10 @@
           </div>
         </div>
         <div class="list-wrapper">
-          <div class="list_title left_title">Деятельность</div>
+          <div class="list_title-wrapper">
+            <div class="left_icon"></div>
+            <div class="list_title left_title">Деятельность</div>
+          </div>
           <div class="left_list">
             <ul>
               <li>Приемлемая стоимость работ</li>
@@ -43,7 +49,10 @@
       </div>
       <div class="benefits_block">
         <div class="list-wrapper">
-          <div class="list_title right_title">Масштабируемость</div>
+          <div class="list_title-wrapper">
+            <div class="list_title right_title">Масштабируемость</div>
+            <div class="right_icon"></div>
+          </div>
           <div class="right_list">
             <ul>
               <li>Нам нужна только проба добываемой и закачиваемой жидкости</li>
@@ -51,9 +60,11 @@
             </ul>
           </div>
         </div>
-
         <div class="list-wrapper">
-          <div class="list_title right_title">Люди</div>
+          <div class="list_title-wrapper">
+            <div class="list_title right_title">Люди</div>
+            <div class="right_icon"></div>
+          </div>
           <div class="right_list">
             <ul>
               <li>Высокая скорость исследований и выдачи заключений</li>
@@ -96,7 +107,7 @@ export default {
 
 .benefits_flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   height: 60vh;
   margin: auto;
 
@@ -109,17 +120,19 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   & > .main_aspects {
-    width: 40vh;
-    height: 40vh;
+    width: 50vh;
+    height: 50vh;
     border-radius: 50%;
     background-color: #92D050;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: white;
-    font-size: 1vw;
+    font-size: 1.25vw;
     text-align: center;
     font-weight: 600;
 
@@ -160,11 +173,43 @@ ul {
 }
 
 .left_title {
-  text-align: left;
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 .right_title {
-  text-align: right;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.right_icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: -3.5rem;
+  margin-right: -3.5rem;
+  border: #92D050 solid 1px;
+}
+
+.left_icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: -3.5rem;
+  margin-left: -3.5rem;
+  border: #92D050 solid 1px;
+}
+
+.list_title-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  & > * {
+    align-self: flex-end;
+  }
 }
 
 </style>
