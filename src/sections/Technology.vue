@@ -54,11 +54,18 @@ export default {
   padding-left: 3rem;
 }
 
+.image {
+  width: 100%;
+  height: 100%;
+}
+
 .blocks {
   display: flex;
 
   img {
-    width: 90%;
+    width: 100%;
+    display: block;
+    margin: auto;
   }
 
   .list {
@@ -67,6 +74,12 @@ export default {
       font-size: 1.5vw;
       color: rgb(101, 113, 118);
     }
+  }
+}
+
+.icon {
+  img {
+    width: 80%;
   }
 }
 
