@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="submit_button">
-            <button>SEND MESSAGE</button>
+            <button @click="sendEmail">SEND MESSAGE</button>
           </div>
         </div>
       </div>
@@ -46,8 +46,20 @@
 </template>
 
 <script>
+import emailService from "../api/service/emailService";
+
 export default {
-  name: "Contacts"
+  name: "Contacts",
+  methods: {
+    sendEmail() {
+      console.log("sending email")
+      emailService.sendEmail().then(data => {
+        console.log(data.data)
+      }).catch(exception => {
+        console.log(exception)
+      })
+    }
+  }
 }
 </script>
 
@@ -78,6 +90,7 @@ export default {
   font-size: 1vw;
   margin-top: 3rem;
 }
+
 .form {
   margin-top: 5rem;
   width: 70vw;

@@ -2,11 +2,11 @@
   <div class="main_page">
     <div>
       <nav class="navigation">
-        <a href="">HOME</a>
-        <a href="">ABOUT</a>
-        <a href="">TEAM</a>
-        <a href="">CONTACT</a>
-        <a href="">GALLERY</a>
+        <a>HOME</a>
+        <a @click="scrollToCompanyMission">ABOUT</a>
+        <a>TEAM</a>
+        <a @click="scrollToContacts">CONTACT</a>
+        <a>GALLERY</a>
       </nav>
     </div>
 
@@ -33,7 +33,17 @@
 
 <script>
 export default {
-  name: "CompanyName"
+  name: "CompanyName",
+  methods: {
+    scrollToCompanyMission() {
+      const block = document.querySelector("div.mission");
+      block.scrollIntoView({block: "center", behavior: "smooth"})
+    },
+    scrollToContacts() {
+      const block = document.querySelector("div.contacts-block");
+      block.scrollIntoView({block: "start", behavior: "smooth"})
+    }
+  }
 }
 </script>
 
