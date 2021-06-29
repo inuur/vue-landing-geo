@@ -11,7 +11,9 @@ app.get('/email', function (req, res) {
     res.send('Hello World!')
 
     sendMessage().then(res => {
-        console.log(res)
+        console.log("Письмо отправлено успешно")
+    }).catch(exception => {
+        console.log(exception)
     });
 })
 
