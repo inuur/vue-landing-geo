@@ -2,8 +2,6 @@ import axios from 'axios'
 
 export default function () {
 
-    const PORT = process.env.PORT || 5000;
-
     const config = {
         withCredentials: true,
         baseURL: `https://${location.host}`,
