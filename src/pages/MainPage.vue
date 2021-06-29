@@ -12,6 +12,10 @@
       <SuccessHistory></SuccessHistory>
       <Demonstration></Demonstration>
       <Technology></Technology>
+      <Footer></Footer>
+      <Contacts></Contacts>
+      <MapBlock></MapBlock>
+      <LastFooter></LastFooter>
     </section>
   </div>
 </template>
@@ -28,10 +32,17 @@ import Work from "../sections/Work";
 import SuccessHistory from "../sections/SuccessHistory";
 import Demonstration from "../sections/Demonstration";
 import Technology from "../sections/Technology";
+import Footer from "../sections/Footer";
+import Contacts from "../sections/Contacts";
+import MapBlock from "../sections/MapBlock";
+import LastFooter from "../sections/LastFooter";
 
 export default {
   name: "MainPage",
   components: {
+    LastFooter,
+    Contacts,
+    Footer,
     Technology,
     Demonstration,
     SuccessHistory,
@@ -42,7 +53,8 @@ export default {
     Tasks,
     History,
     Mission,
-    CompanyName
+    CompanyName,
+    MapBlock
   }
 }
 </script>

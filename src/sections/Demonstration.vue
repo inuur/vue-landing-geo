@@ -19,7 +19,7 @@
         </ul>
       </div>
       <div class="right">
-        <dim class="image-wrapper">
+        <div class="image-wrapper">
           <img src="../assets/images/demonstration_image.png" alt="">
           <div class="image_description">
             Рисунок  – Скважины для исследований: скв.1 и скв.2
@@ -28,7 +28,7 @@
             <br> фильтром на 2 пласта; скв.4 – нагнетательная
             <br> скважина; 1 и 2 – номер объекта разработки
           </div>
-        </dim>
+        </div>
       </div>
     </div>
 
