@@ -6,7 +6,7 @@ export default function () {
 
     const config = {
         withCredentials: true,
-        baseURL: `http://localhost:${PORT}`,
+        baseURL: `${location.host}:${PORT}`,
         headers: {
             'Content-type': 'application/json',
             'Access-Control-Allow-Origin': '*',
