@@ -30,6 +30,7 @@ export default {
   height: 100vh;
   display: flex;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .box {
@@ -65,6 +66,7 @@ export default {
 }
 
 .image {
+  position: relative;
   & > img {
     width: 30vw;
     height: 30vw;

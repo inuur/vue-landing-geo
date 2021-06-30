@@ -58,6 +58,7 @@ export default {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
 }
 
 .navigation {

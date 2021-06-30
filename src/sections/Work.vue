@@ -50,6 +50,7 @@ export default {
 
 .work {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .work_title {

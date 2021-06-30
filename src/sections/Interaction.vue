@@ -78,6 +78,7 @@ export default {
 
 .interaction {
   height: 100vh;
+  scroll-snap-align: start;
   display: flex;
 
   .icon {

@@ -13,6 +13,7 @@ export default {
 <style scoped lang="scss">
  .footer {
    height: 8vh;
+   scroll-snap-align: start;
    display: flex;
    justify-content: center;
    align-items: center;

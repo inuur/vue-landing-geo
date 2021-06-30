@@ -51,6 +51,7 @@ export default {
 
 .tasks {
   height: 100vh;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;

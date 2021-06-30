@@ -35,6 +35,7 @@ export default {
 
 .success_history {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .success_history-title {

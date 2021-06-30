@@ -59,6 +59,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
+
+#company_name {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 </style>

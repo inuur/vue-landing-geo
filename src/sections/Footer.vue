@@ -31,6 +31,7 @@ export default {
 
 .footer {
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .blocks {

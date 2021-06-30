@@ -96,6 +96,7 @@ export default {
   background-color: rgb(235, 255, 235);
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
 }
 
 .title {
