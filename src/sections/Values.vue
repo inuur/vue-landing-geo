@@ -8,9 +8,15 @@
       ДЕЛОВАЯ СРЕДА
     </div>
     <div class="images">
-      <img class="squared_image" src="../assets/images/values1.jpg" alt="">
-      <img src="../assets/images/values2.png" alt="">
-      <img src="../assets/images/values3.png" alt="">
+      <div class="img-wrapper">
+        <img class="squared_image" src="../assets/images/values1.jpg" alt="">
+      </div>
+      <div class="img-wrapper">
+        <img src="../assets/images/values2.png" alt="">
+      </div>
+      <div class="img-wrapper">
+        <img src="../assets/images/values3.png" alt="">
+      </div>
     </div>
     <div class="footer">
       <div class="text">ОТ РЕШАЕМЫХ ЗАДАЧ К УСТОЙЧИВОМУ РАЗВИТИЮ ПРЕДПРИЯТИЯ</div>
@@ -53,11 +59,15 @@ export default {
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
+  gap: 4rem;
   align-items: center;
-  height: 40vh;
 
-  & > img {
-    height: 70%;
+  & > div {
+    height: 20vw;
+
+    & > img {
+      height: 100%;
+    }
   }
 }
 

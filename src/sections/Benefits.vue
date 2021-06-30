@@ -124,8 +124,8 @@ export default {
   margin-right: 2rem;
 
   & > .main_aspects {
-    width: 50vh;
-    height: 50vh;
+    width: 27vw;
+    height: 27vw;
     border-radius: 50%;
     background-color: #92D050;
     display: flex;
@@ -157,7 +157,7 @@ export default {
 .list_title {
   font-weight: 600;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .left_list, .right_list {
@@ -169,7 +169,7 @@ export default {
 }
 
 ul {
-  font-size: 1.5rem;
+  font-size: 1vw;
 }
 
 .left_title {

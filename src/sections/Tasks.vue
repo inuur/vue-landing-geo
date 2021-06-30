@@ -76,7 +76,7 @@ export default {
 
 .task_name {
   flex-wrap: wrap;
-  font-size: 30px;
+  font-size: 1.2vw;
   font-weight: 600;
   text-align: center;
 }
@@ -84,7 +84,7 @@ export default {
 .task_image > img {
   display: block;
   margin: auto auto 1rem;
-  height: 30vh;
+  height: 15vw;
 }
 
 .company_icon > img {

@@ -172,4 +172,9 @@ export default {
   }
 
 }
+
+.contacts-block {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 </style>
