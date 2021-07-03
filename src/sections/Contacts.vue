@@ -76,9 +76,14 @@ export default {
         return
       }
 
-      emailService.sendEmail(this.data).then(data => {
-        console.log(data)
+      emailService.sendEmail(this.data).then(() => {
         this.isPopupVisible = true
+        this.data = {
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        }
       }).catch(exception => {
         console.log(exception)
       })
