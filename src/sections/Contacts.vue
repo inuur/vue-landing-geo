@@ -8,12 +8,12 @@
       </div>
       <div class="form">
         <div class="data">
-          <input name="name" type="text" placeholder="Name">
-          <input name="email" type="email" placeholder="Email">
-          <input name="phone" type="text" placeholder="Phone">
+          <input name="name" type="text" placeholder="Name" v-model="data.name">
+          <input name="email" type="email" placeholder="Email" v-model="data.email">
+          <input name="phone" type="text" placeholder="Phone" v-model="data.phone">
         </div>
         <div class="message">
-          <textarea name="message" placeholder="Message"></textarea>
+          <textarea name="message" placeholder="Message" v-model="data.message"></textarea>
         </div>
         <div class="contacts">
           <div class="contacts-wrapper">
@@ -50,10 +50,19 @@ import emailService from "../api/service/emailService";
 
 export default {
   name: "Contacts",
+  data() {
+    return {
+      data: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      }
+    }
+  },
   methods: {
     sendEmail() {
-      console.log("sending email")
-      emailService.sendEmail().then(data => {
+      emailService.sendEmail(this.data).then(data => {
         console.log(data.data)
       }).catch(exception => {
         console.log(exception)
