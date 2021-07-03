@@ -1,5 +1,11 @@
 <template>
   <div class="contacts-block">
+
+    <email-sent-popup
+      v-if="isPopupVisible"
+      @close="isPopupVisible = false"
+    ></email-sent-popup>
+
     <div class="contacts-container">
       <div class="title">
         <div class="text">КОНТАКТЫ</div>
@@ -47,9 +53,11 @@
 
 <script>
 import emailService from "../api/service/emailService";
+import EmailSentPopup from "../components/EmailSentPopup";
 
 export default {
   name: "Contacts",
+  components: {EmailSentPopup},
   data() {
     return {
       data: {
@@ -57,13 +65,20 @@ export default {
         email: '',
         phone: '',
         message: ''
-      }
+      },
+      isPopupVisible: false
     }
   },
   methods: {
     sendEmail() {
+
+      if (this.isPopupVisible) {
+        return
+      }
+
       emailService.sendEmail(this.data).then(data => {
-        console.log(data.data)
+        console.log(data)
+        this.isPopupVisible = true
       }).catch(exception => {
         console.log(exception)
       })
@@ -157,6 +172,10 @@ export default {
       color: white;
       font-weight: 600;
       font-size: 1rem;
+
+      &:hover {
+        background-color: #52E669;
+      }
     }
   }
 }
