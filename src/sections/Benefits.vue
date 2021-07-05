@@ -10,7 +10,9 @@
       <div class="benefits_block">
         <div class="list-wrapper">
           <div class="list_title-wrapper">
-            <div class="left_icon"></div>
+            <div class="left_icon">
+              <img src="../assets/icons/benefits-icon1.svg" alt="" class="icon">
+            </div>
             <div class="list_title left_title">Экономия, быстрота</div>
           </div>
           <div class="left_list">
@@ -23,7 +25,9 @@
         </div>
         <div class="list-wrapper">
           <div class="list_title-wrapper">
-            <div class="left_icon"></div>
+            <div class="left_icon">
+              <img src="../assets/icons/benefits-icon3.svg" alt="" class="icon">
+            </div>
             <div class="list_title left_title">Деятельность</div>
           </div>
           <div class="left_list">
@@ -51,7 +55,9 @@
         <div class="list-wrapper">
           <div class="list_title-wrapper">
             <div class="list_title right_title">Масштабируемость</div>
-            <div class="right_icon"></div>
+            <div class="right_icon">
+              <img src="../assets/icons/benefits-icon2.svg" alt="" class="icon">
+            </div>
           </div>
           <div class="right_list">
             <ul>
@@ -63,7 +69,9 @@
         <div class="list-wrapper">
           <div class="list_title-wrapper">
             <div class="list_title right_title">Люди</div>
-            <div class="right_icon"></div>
+            <div class="right_icon">
+              <img src="../assets/icons/benefits-icon4.svg" alt="" class="icon">
+            </div>
           </div>
           <div class="right_list">
             <ul>
@@ -211,6 +219,19 @@ ul {
   & > * {
     align-self: flex-end;
   }
+}
+
+.icon {
+  width: 65%;
+  fill: red;
+}
+
+path { fill: orange; }
+
+.left_icon, .right_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
