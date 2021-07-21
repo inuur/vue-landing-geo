@@ -4,9 +4,7 @@
       <nav class="navigation">
         <a>HOME</a>
         <a @click="scrollToCompanyMission">ABOUT</a>
-        <a>TEAM</a>
         <a @click="scrollToContacts">CONTACT</a>
-        <a>GALLERY</a>
       </nav>
     </div>
 
