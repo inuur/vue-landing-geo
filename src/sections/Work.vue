@@ -64,6 +64,7 @@ export default {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .image_title {
@@ -76,12 +77,17 @@ export default {
 
 .images-wrapper {
   display: flex;
-  gap: 1rem;
   background-color: #92D050;
-  & > .image-wrapper > .image > img {
+  padding-bottom: 2rem;
+  & > .image-wrapper > .image {
     width: 28vw;
     height: 28vw;
-    padding: 1rem;
+    padding: .1rem;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>

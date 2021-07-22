@@ -3,6 +3,7 @@
     <section id="company_name">
       <CompanyName></CompanyName>
       <Mission></Mission>
+      <About></About>
       <Values></Values>
       <History></History>
       <Tasks></Tasks>
@@ -36,10 +37,12 @@ import Footer from "../sections/Footer";
 import Contacts from "../sections/Contacts";
 import MapBlock from "../sections/MapBlock";
 import LastFooter from "../sections/LastFooter";
+import About from "../sections/About";
 
 export default {
   name: "MainPage",
   components: {
+    About,
     LastFooter,
     Contacts,
     Footer,

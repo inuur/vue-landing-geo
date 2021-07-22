@@ -9,17 +9,23 @@
     </div>
     <div class="images">
       <div class="img-wrapper">
-        <img class="squared_image" src="../assets/images/values1.jpg" alt="">
+        <img class="squared_image photo" src="../assets/images/values1.jpg" alt="">
       </div>
       <div class="img-wrapper">
-        <img src="../assets/images/values2.png" alt="">
+        <img class="value" src="../assets/images/values2.png" alt="">
       </div>
       <div class="img-wrapper">
-        <img src="../assets/images/values3.png" alt="">
+        <img class="value" src="../assets/images/values3.png" alt="">
       </div>
     </div>
     <div class="footer">
-      <div class="text">ОТ РЕШАЕМЫХ ЗАДАЧ К УСТОЙЧИВОМУ РАЗВИТИЮ ПРЕДПРИЯТИЯ</div>
+      <div class="text">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div>
+        ОТ РЕШАЕМЫХ ЗАДАЧ К УСТОЙЧИВОМУ РАЗВИТИЮ ПРЕДПРИЯТИЯ
+      </div>
     </div>
   </div>
 </template>
@@ -59,17 +65,9 @@ export default {
 .images {
   margin-top: 3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 4rem;
   align-items: center;
-
-  & > div {
-    height: 20vw;
-
-    & > img {
-      height: 100%;
-    }
-  }
 }
 
 .squared_image {
@@ -77,13 +75,45 @@ export default {
   height: 20vw !important;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text {
   text-align: center;
-  background-color: rgb(138, 144, 154);
-  width: 90%;
+  color: rgb(138, 144, 154);
+  display: inline-block;
+  width: auto;
   margin: 4rem auto auto;
   font-size: 2vw;
-  color: white;
   font-weight: 600;
+
+  position: relative;
+
+  .top-left {
+    top: -1rem;
+    left: -5rem;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    border-top: #92D050 solid .5vw;
+    border-left: #92D050 solid .5vw;
+  }
+
+  .bottom-right {
+    right: -5rem;
+    bottom: -1rem;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    border-right: #92D050 solid .5vw;
+    border-bottom: #92D050 solid .5vw;
+  }
+}
+
+.value {
+  height: 15vw !important;
 }
 </style>

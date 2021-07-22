@@ -1,35 +1,47 @@
 <template>
-<div class="history">
-  <div class="company_icon">
-    <img src="../assets/icons/coloredIcon.svg" alt="">
-  </div>
-  <div class="history-wrapper">
-    <div class="history_title">
-      <div class="title">ИСТОРИЯ СОЗДАНИЯ</div>
-      <div class="subtitle">ОТ ИДЕИ ДО ТЕХНОЛОГИИ</div>
+  <div class="history">
+    <div class="company_icon">
+      <img src="../assets/icons/coloredIcon.svg" alt="">
     </div>
-    <div class="images">
-      <div class="image">
-        <img src="../assets/images/history1.png" alt="">
-        <div class="line"></div>
-        <div class="circle"></div>
-        <div class="year">2019</div>
+    <div class="history-wrapper">
+      <div class="history_title">
+        <div class="title">ИСТОРИЯ СОЗДАНИЯ</div>
+        <div class="subtitle">ОТ ИДЕИ ДО ТЕХНОЛОГИИ</div>
       </div>
-      <div class="image">
-        <img src="../assets/images/history2.jpg" alt="">
-        <div class="line"></div>
-        <div class="circle"></div>
-        <div class="year">2020</div>
+      <div class="images">
+        <div class="image">
+          <div class="image-wrapper">
+            <img src="../assets/images/history1.png" alt="">
+            <div class="description">СТАРТАП «ГЕОХИМИЧЕСКИЕ <br> ТЕХНОЛОГИИ»</div>
+          </div>
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="year">2019</div>
+        </div>
+        <div class="image">
+          <div class="image-wrapper">
+            <img src="../assets/images/history2.jpg" alt="">
+            <div class="description">НАРАБОТКА БАЗЫ ДАННЫХ <br> И ОПР</div>
+          </div>
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="year">2020</div>
+        </div>
+        <div class="image">
+          <div class="image-wrapper">
+            <img src="../assets/images/history3.png" alt="">
+            <div class="description">ПРОМЫШЛЕННОЕ <br>ВНЕДРЕНИЕ ТЕХНОЛОГИИ</div>
+          </div>
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="year">2021</div>
+        </div>
       </div>
-      <div class="image">
-        <img src="../assets/images/history3.png" alt="">
-        <div class="line"></div>
-        <div class="circle"></div>
-        <div class="year">2021</div>
-      </div>
+      <hr>
+
+
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -58,6 +70,7 @@ export default {
 
 .subtitle {
   font-size: 1vw;
+  color: rgb(89, 89, 89);
 }
 
 .history {
@@ -73,13 +86,16 @@ export default {
 
   .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 4rem;
+    gap: 10rem;
 
-    & > .image > img {
-      width: 20vw;
-      height: 65%;
-      border: 1px solid rgb(0, 0, 0, 0.2);
+    & > .image {
+      & > .image-wrapper > img {
+        width: 16vw;
+        height: min(35vh, 20vw);
+        border: 1px solid rgb(0, 0, 0, 0.2);
+      }
     }
 
     .line {
@@ -104,6 +120,23 @@ export default {
       font-weight: 600;
     }
   }
+}
+
+.description {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.image-wrapper {
+  height: auto;
+  border: #52E669 2px solid;
+}
+
+hr {
+  width: 90%;
+  margin: 3vw auto;
 }
 
 </style>

@@ -1,17 +1,22 @@
 <template>
   <div class="mission">
     <div class="box">
-      <div class="text">
-        <div class="title">МИССИЯ<br>КОМПАНИИ</div>
-        <div class="description">
-          <div class="description_title">Комлпексные исследования пластового флюида и управление разработкой месторождений</div>
-          <div class="description_text">Мы помогаем быть лучшими в рациональном, эффективном и экологичном освоении запасов жидких углеводородов</div>
+      <div class="title">
+        <div class="title_header">Миссия <br> компании</div>
+        <div class="title_description">Комплексные исследования <br> пластового флюида и <br> управление разработкой
+          <br> месторождений
         </div>
       </div>
-      <div class="image-wrapper">
-        <div class="image">
-          <img src="../assets/images/mission_image.jpg" alt="">
-          <div class="square"></div>
+      <div class="text">
+        <div class="description">
+          <div class="description-wrapper">
+            <div class="top-left"></div>
+            <div class="top-right"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-right"></div>
+            <p>Мы помогаем быть лучшими в <br> рациональном, эффективном и <br> экологичном освоении запасов жидких <br>
+              углеводородов.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -31,58 +36,79 @@ export default {
   display: flex;
   align-items: center;
   scroll-snap-align: start;
+  background: url("../assets/background/missionBackground.png") no-repeat center;
+  background-size: cover;
 }
 
 .box {
   display: flex;
-  width: 100%;
 
-  & > * {
-    padding: 5rem;
-    width: 100%;
+  .title {
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(121, 209, 85, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    &_header {
+      font-size: 4vw;
+      font-weight: bold;
+    }
+
+    &_description {
+      margin-top: 2rem;
+      font-size: 1.55vw;
+      text-align: left;
+    }
+  }
+
+  .text {
+    width: 59vw;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .description {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-wrapper {
+
+        p {
+          padding: 3rem;
+        }
+
+        position: relative;
+        color: white;
+        font-size: 1.55vw;
+        margin-bottom: 3rem;
+
+        .top-left {
+          top: 1rem;
+          width: 2vw;
+          height: 2vw;
+          position: absolute;
+          border-top: white solid .5vw;
+          border-left: white solid .5vw;
+        }
+
+        .bottom-right {
+          right: -1rem;
+          bottom: 2rem;
+          width: 2vw;
+          height: 2vw;
+          position: absolute;
+          border-right: white solid .5vw;
+          border-bottom: white solid .5vw;
+        }
+      }
+    }
   }
 }
 
-.title {
-  color: #92D050;
-  font-size: 4vw;
-  font-weight: 600;
-  line-height: 3.5vw;
-}
-
-.description {
-  padding-top: 4rem;
-  text-align: center;
-
-  &_title {
-    font-weight: 600;
-    font-size: 1.7vw;
-  }
-
-  &_text {
-    margin-top: 1rem;
-    font-size: 1.5vw;
-  }
-}
-
-.image {
-  position: relative;
-  & > img {
-    width: 30vw;
-    height: 30vw;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
-  }
-}
-
-.square {
-  width: 15vw;
-  height: 15vw;
-  border: 1vw solid;
-  border-radius: 1rem;
-  margin-top: -23vw;
-  margin-left: 21.5vw;
-  position: absolute;
-  color: #92D050;
-}
 
 </style>
