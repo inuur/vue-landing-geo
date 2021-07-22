@@ -24,13 +24,24 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .footer, .image {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .footer, .image {
+    height: 100vh;
+  }
+}
+
 .company_icon > img {
   display: block;
   width: 40vw;
 }
 
 .footer {
-  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -43,7 +54,6 @@ export default {
 }
 
 .image {
-  height: 100vh;
   background: url("../assets/background/back.jpg") center;
 }
 

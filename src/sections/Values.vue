@@ -4,7 +4,7 @@
       <img src="../assets/icons/coloredIcon.svg" alt="">
     </div>
     <div class="title">
-      НАШИ ЦЕННОСТИ, ПОЛИТИКА и
+      НАШИ ЦЕННОСТИ, ПОЛИТИКА,
       ДЕЛОВАЯ СРЕДА
     </div>
     <div class="images">
@@ -36,9 +36,22 @@ export default {
 }
 </script>
 
+
 <style scoped lang="scss">
+
+@media (max-width: 1024px) {
+  .values {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .values {
+    height: 100vh;
+  }
+}
+
 .values {
-  height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;

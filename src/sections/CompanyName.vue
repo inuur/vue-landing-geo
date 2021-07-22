@@ -50,8 +50,19 @@ export default {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 1024px) {
+  .main_page {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .main_page {
+    height: 100vh;
+  }
+}
+
 .main_page {
-  height: 100vh;
   background: url("../assets/background/back.jpg") bottom;
   background-size: cover;
   display: flex;

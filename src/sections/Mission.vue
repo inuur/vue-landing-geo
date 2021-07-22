@@ -31,8 +31,19 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .mission, .title {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .mission, .title {
+    height: 100vh;
+  }
+}
+
 .mission {
-  height: 100vh;
   display: flex;
   align-items: center;
   scroll-snap-align: start;
@@ -45,7 +56,6 @@ export default {
 
   .title {
     width: 40vw;
-    height: 100vh;
     background-color: rgba(121, 209, 85, .7);
     display: flex;
     flex-direction: column;

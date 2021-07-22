@@ -34,8 +34,19 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .technology {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .technology {
+    height: 100vh;
+  }
+}
+
 .technology {
-  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -71,9 +82,14 @@ export default {
 
   .list {
     ul {
+      padding-top: 7rem;
       padding-left: 10rem;
       font-size: 1.5vw;
       color: rgb(101, 113, 118);
+
+      li {
+        padding-bottom: 1rem;
+      }
     }
   }
 }

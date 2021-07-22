@@ -3,9 +3,6 @@
     <div class="company_icon">
       <img src="../assets/icons/coloredIcon.svg" alt="">
     </div>
-    <div class="title">
-      Наши преимущества
-    </div>
     <div class="benefits_flex">
       <div class="benefits_block">
         <div class="list-wrapper">
@@ -17,8 +14,8 @@
           </div>
           <div class="left_list">
             <ul>
-              <li>Без остановки скважин</li>
-              <li>Без подъёма глубинно-насосного оборудования</li>
+              <li class="green">Без остановки скважин</li>
+              <li class="blue">Без подъёма глубинно-насосного <br> оборудования</li>
               <li>Без геофизических исследований</li>
             </ul>
           </div>
@@ -32,23 +29,18 @@
           </div>
           <div class="left_list">
             <ul>
-              <li>Приемлемая стоимость работ</li>
-              <li>Качественные решения широкого спектра задач</li>
+              <li class="green">Инновационная технология</li>
+              <li class="blue">Качественные решения широкого спектра <br> задач</li>
+              <li>Уникальный источник информации</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="benefits_middle_block">
         <div class="main_aspects">
-          <div class="first_line">
-            Востребованность<br>новых технологий
-          </div>
           <div class="second_line">
-            <span class="text">Снижение<br>затрат</span>
-            <span class="black_text">Общие<br>аспекты</span>
-            <span class="text">Освоение<br>недр</span>
+            <span class="black_text">Преимущества</span>
           </div>
-          <div class="last_line">Мониторинг скважинных<br>операций</div>
         </div>
       </div>
       <div class="benefits_block">
@@ -61,22 +53,24 @@
           </div>
           <div class="right_list">
             <ul>
-              <li>Нам нужна только проба добываемой и закачиваемой жидкости</li>
-              <li>Отсутствие ограничений по глубине скважин</li>
+              <li class="green">Нам нужна только проба добываемой и закачиваемой жидкости</li>
+              <li class="blue">Отсутствие ограничений по глубине скважин</li>
+              <li>Применение технологии в любом регионе</li>
             </ul>
           </div>
         </div>
         <div class="list-wrapper">
           <div class="list_title-wrapper">
-            <div class="list_title right_title">Люди</div>
+            <div class="list_title right_title">Команда</div>
             <div class="right_icon">
               <img src="../assets/icons/benefits-icon4.svg" alt="" class="icon">
             </div>
           </div>
           <div class="right_list">
             <ul>
-              <li>Высокая скорость исследований и выдачи заключений</li>
-              <li>Профессиональная и отзывчивая команда</li>
+              <li class="green">Высокая скорость исследований и выдачи заключений</li>
+              <li class="blue">Профессиональная и отзывчивая команда</li>
+              <li>Нацеленность на решение задач заказчика</li>
             </ul>
           </div>
         </div>
@@ -93,6 +87,18 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .benefits {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .benefits {
+    height: 100vh;
+  }
+}
+
 .company_icon > img {
   width: 15vw;
   display: block;
@@ -100,7 +106,6 @@ export default {
 }
 
 .benefits {
-  height: 100vh;
   background-color: rgb(235, 255, 235);
   display: flex;
   flex-direction: column;
@@ -121,7 +126,7 @@ export default {
   margin: auto;
 
   & > .benefits_block {
-    width: 30%;
+    width: 33%;
   }
 }
 
@@ -133,8 +138,8 @@ export default {
   margin-right: 2rem;
 
   & > .main_aspects {
-    width: 27vw;
-    height: 27vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     background-color: #92D050;
     display: flex;
@@ -151,8 +156,10 @@ export default {
     }
 
     .black_text {
-      font-weight: 800;
-      color: black;
+      color: rgb(59, 56, 56);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3vw;
     }
   }
 }
@@ -160,7 +167,7 @@ export default {
 .benefits_block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .list_title {
@@ -175,10 +182,18 @@ export default {
   padding: 3rem;
   margin-top: 0.5rem;
   border: #92D050 solid 1px;
+  height: min(15vh, 10vw);
+  display: flex;
+  align-items: center;
 }
 
 ul {
-  font-size: 1vw;
+  font-weight: 700;
+  font-size: 1.15vw;
+
+  li {
+    padding-bottom: .5vw;
+  }
 }
 
 .left_title {
@@ -226,12 +241,26 @@ ul {
   fill: red;
 }
 
-path { fill: orange; }
+path {
+  fill: orange;
+}
 
 .left_icon, .right_icon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.green {
+  color: rgb(84, 130, 53);
+}
+
+.blue {
+  color: rgb(46, 117, 182);
+}
+
+.list-wrapper {
+  padding-bottom: 2vw;
 }
 
 </style>

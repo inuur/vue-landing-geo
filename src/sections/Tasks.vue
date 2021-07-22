@@ -41,8 +41,19 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .tasks {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .tasks {
+    height: 100vh;
+  }
+}
+
 .tasks {
-  height: 100vh;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;

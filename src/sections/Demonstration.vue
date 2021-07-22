@@ -55,9 +55,20 @@ export default {
   padding-top: 2rem;
 }
 
+@media (max-width: 1024px) {
+  .demonstration {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .demonstration {
+    height: 100vh;
+  }
+}
+
 .demonstration {
   position: relative;
-  height: 100vh;
   overflow: hidden;
   scroll-snap-align: start;
 }
@@ -117,6 +128,7 @@ export default {
   font-size: 1.2vw;
   padding-top: 2rem;
   font-weight: 600;
+  line-height: 3rem;
 }
 
 .circle {

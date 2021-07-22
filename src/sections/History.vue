@@ -11,7 +11,7 @@
       <div class="images">
         <div class="image">
           <div class="image-wrapper">
-            <img src="../assets/images/history1.png" alt="">
+            <img src="../assets/images/history1.jpg" alt="">
             <div class="description">СТАРТАП «ГЕОХИМИЧЕСКИЕ <br> ТЕХНОЛОГИИ»</div>
           </div>
           <div class="line"></div>
@@ -21,7 +21,7 @@
         <div class="image">
           <div class="image-wrapper">
             <img src="../assets/images/history2.jpg" alt="">
-            <div class="description">НАРАБОТКА БАЗЫ ДАННЫХ <br> И ОПР</div>
+            <div class="description">НАРАБОТКА БАЗЫ ДАННЫХ <br> И ПИЛОТНЫХ ПРОЕКТОВ</div>
           </div>
           <div class="line"></div>
           <div class="circle"></div>
@@ -73,8 +73,19 @@ export default {
   color: rgb(89, 89, 89);
 }
 
+@media (max-width: 1024px) {
+  .history {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .history {
+    height: 100vh;
+  }
+}
+
 .history {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

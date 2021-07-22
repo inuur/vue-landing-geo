@@ -76,8 +76,19 @@ export default {
   margin: 3rem auto auto;
 }
 
+@media (max-width: 1024px) {
+  .interaction {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .interaction {
+    height: 100vh;
+  }
+}
+
 .interaction {
-  height: 100vh;
   scroll-snap-align: start;
   display: flex;
 

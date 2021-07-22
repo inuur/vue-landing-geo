@@ -46,8 +46,19 @@ export default {
 
 <style scoped lang="scss">
 
+@media (max-width: 1024px) {
+  .about {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1205px) {
+  .about {
+    height: 100vh;
+  }
+}
+
 .about {
-  height: 100vh;
   scroll-snap-align: start;
 }
 
