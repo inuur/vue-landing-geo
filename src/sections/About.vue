@@ -46,19 +46,8 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .about {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .about {
-    height: 100vh;
-  }
-}
-
 .about {
+  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -72,8 +61,8 @@ export default {
 
   .images {
 
-    $img_size: min(40vw, 40vh);
-    $gap: min(10vw, 10vh);
+    $img_size: 20vw;
+    $gap: 5vw;
 
     & > .images-wrapper {
       display: grid;
@@ -109,8 +98,8 @@ export default {
 
     .square {
       position: absolute;
-      width: min(50vw, 50vh);
-      height: min(50vw, 50vh);
+      width: min(25vw);
+      height: min(25vw);
       background-color: #92D050;
     }
   }

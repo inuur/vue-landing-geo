@@ -73,19 +73,8 @@ export default {
   color: rgb(89, 89, 89);
 }
 
-@media (max-width: 1024px) {
-  .history {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .history {
-    height: 100vh;
-  }
-}
-
 .history {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +100,7 @@ export default {
 
     .line {
       margin: auto;
-      height: 5rem;
+      height: 4vh;
       width: 8px;
       background-color: rgb(255, 192, 0);
     }

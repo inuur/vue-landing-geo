@@ -87,18 +87,6 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .benefits {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .benefits {
-    height: 100vh;
-  }
-}
-
 .company_icon > img {
   width: 15vw;
   display: block;
@@ -106,6 +94,7 @@ export default {
 }
 
 .benefits {
+  height: 100vh;
   background-color: rgb(235, 255, 235);
   display: flex;
   flex-direction: column;

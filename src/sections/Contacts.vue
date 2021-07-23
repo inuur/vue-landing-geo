@@ -94,19 +94,8 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .contacts-block {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .contacts-block {
-    height: 60vh;
-  }
-}
-
 .contacts-block {
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;

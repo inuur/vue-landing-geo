@@ -26,18 +26,6 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .success_history {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .success_history {
-    height: 100vh;
-  }
-}
-
 .company_icon > img {
   width: 15vw;
   display: block;
@@ -46,6 +34,7 @@ export default {
 }
 
 .success_history {
+  height: 100vh;
   scroll-snap-align: start;
 }
 

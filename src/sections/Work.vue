@@ -57,19 +57,8 @@ export default {
   margin: 1rem auto auto;
 }
 
-@media (max-width: 1024px) {
-  .work {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .work {
-    height: 100vh;
-  }
-}
-
 .work {
+  height: 100vh;
   scroll-snap-align: start;
 }
 

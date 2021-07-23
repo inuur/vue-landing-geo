@@ -34,19 +34,8 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .technology {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .technology {
-    height: 100vh;
-  }
-}
-
 .technology {
+  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -75,6 +64,7 @@ export default {
   display: flex;
 
   img {
+    height: 100%;
     width: 100%;
     display: block;
     margin: auto;

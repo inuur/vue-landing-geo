@@ -17,19 +17,8 @@ export default {
 
 <style scoped lang="scss">
 
-@media (max-width: 1024px) {
-  .map-wrapper {
-    height: 20vh;
-  }
-}
-
-@media (min-width: 1205px) {
-  .map-wrapper {
-    height: 40vh;
-  }
-}
-
 .map-wrapper {
+  height: 40vh;
   background-color: antiquewhite;
 }
 
