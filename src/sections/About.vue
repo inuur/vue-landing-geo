@@ -149,7 +149,7 @@ export default {
         }
 
         p {
-          margin-bottom: 2rem;
+          margin-bottom: 3vh;
         }
       }
     }
