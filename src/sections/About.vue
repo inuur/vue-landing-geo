@@ -75,7 +75,9 @@ export default {
 
       & > img {
         width: $img_size;
+        max-width: 40vh;
         height: $img_size;
+        max-height: 40vh;
       }
 
       .img1 {
@@ -98,8 +100,9 @@ export default {
 
     .square {
       position: absolute;
-      width: min(25vw);
-      height: min(25vw);
+      width: 25vw;
+      height: 25vw;
+      max-height: 50vh;
       background-color: #92D050;
     }
   }
