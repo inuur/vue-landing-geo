@@ -33,8 +33,8 @@ async function sendMessage(data) {
 
     let info = await transporter.sendMail({
         from: 'GEOINDICATOR',
-        to: "inuur@mail.ru",
-        subject: "Заявка со страницы GEOINDICATOR ✔",
+        to: "m.shipaeva@geoindicator.com",
+        subject: "Заявка со страницы GEOINDICATOR",
         html: `
             <h1>Заявка со страницы GEOINDICATOR</h1>
             <p><h2>Имя: </h2> <bold>${data.name}</bold></p>
