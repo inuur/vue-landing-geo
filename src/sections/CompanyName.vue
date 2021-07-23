@@ -34,7 +34,7 @@ export default {
   name: "CompanyName",
   methods: {
     scrollToCompanyMission() {
-      const block = document.querySelector("div.mission");
+      const block = document.querySelector("div.about");
       block.scrollIntoView({block: "center", behavior: "smooth"})
     },
     scrollToContacts() {

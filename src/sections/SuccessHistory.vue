@@ -48,11 +48,13 @@ export default {
 
 .images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1vw;
 
   img {
     display: block;
     width: 85%;
+    max-width: 90vh;
     margin: auto;
   }
 }

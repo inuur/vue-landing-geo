@@ -64,8 +64,8 @@ export default {
   display: flex;
 
   img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     display: block;
     margin: auto;
   }

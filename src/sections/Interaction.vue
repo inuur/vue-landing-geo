@@ -11,46 +11,6 @@
         <div class="subtitle">ОТНОШЕНИЯ МЕЖДУ НЕФТЕГАЗОВЫМИ КОМПАНИЯМИ И ЗАИНТЕРЕСОВАННЫМИ СТОРОНАМИ</div>
       </div>
 
-<!--      <div class="arrow">-->
-<!--        <img src="../assets/images/interaction-arrow.png" alt="">-->
-<!--      </div>-->
-
-<!--      <div class="blocks">-->
-<!--        <div class="public-partners-wrapper">-->
-<!--          <div class="publications">-->
-<!--            <div class="block_title">Публикации</div>-->
-<!--            <div class="image-wrapper">-->
-<!--              <img src="../assets/images/interaction-publications.png" alt="">-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="partners">-->
-<!--            <div class="block_title">Партнеры</div>-->
-<!--            <div class="image-wrapper">-->
-<!--              <img src="../assets/images/interaction-partners.png" alt="">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="impact">-->
-<!--          <div class="list-wrapper">-->
-<!--            <div class="list-title">Оказывают влияние на</div>-->
-<!--            <ul>-->
-<!--              <li>Решение инвесторов</li>-->
-<!--              <li>Конкурентоспособность</li>-->
-<!--              <li>Репутацию</li>-->
-<!--              <li>Сотрудничество</li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div class="images-wrapper">-->
-<!--              <img src="../assets/images/blue.jpg" alt="">-->
-<!--              <div class="image_title">Взаимодействие</div>-->
-<!--              <img src="../assets/images/red.png" alt="">-->
-<!--              <div class="image_title">Потеря</div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
       <div class="main_image">
         <img src="../assets/images/interaction-main-image.png" alt="">
       </div>
@@ -77,23 +37,25 @@ export default {
 }
 
 .interaction {
+  max-width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
 
   .icon {
-    width: 30%;
+    width: 30vw;
     background-color: rgb(242, 242, 242);
     display: flex;
 
     & > img {
       width: 100%;
+      max-width: 60vh;
       margin: auto;
     }
   }
 
   .info {
-    width: 70%;
+    width: 70vw;
   }
 }
 
@@ -202,5 +164,8 @@ export default {
 
 .main_image > img {
   width: 100%;
+  max-width: 120vh;
+  display: block;
+  margin: auto;
 }
 </style>

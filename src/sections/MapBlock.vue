@@ -18,6 +18,7 @@ export default {
 <style scoped lang="scss">
 
 .map-wrapper {
+  max-width: 100vw;
   height: 40vh;
   background-color: antiquewhite;
 }
