@@ -117,7 +117,7 @@ export default {
   font-size: 1.2vw;
   padding-top: 2rem;
   font-weight: 600;
-  line-height: 3rem;
+  line-height: 5vh;
 }
 
 .circle {
