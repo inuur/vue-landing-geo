@@ -11,10 +11,10 @@ export default {
   }),
   mounted() {
     this.map = new DG.map(this.$el, {
-      'center': [55.79843, 49.11012],
-      'zoom': 16
+      'center': [55.823112253116484, 49.06073442766759],
+      'zoom': 12
     });
-    DG.marker([55.79843, 49.11012], {}).addTo(this.map);
+    DG.marker([55.823112253116484, 49.06073442766759], {}).addTo(this.map);
   },
   beforeDestroy() {
     if (this.map) this.map.remove();

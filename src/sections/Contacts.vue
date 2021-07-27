@@ -39,7 +39,7 @@
               <span class="icon">
                 <img src="../assets/icons/email.png" alt="">
               </span>
-              <span>geoindicator@gmail.com</span>
+              <span>m.shipaeva@geoindicator.com</span>
             </div>
           </div>
           <div class="submit_button">

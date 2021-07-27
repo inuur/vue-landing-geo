@@ -9,7 +9,7 @@
         <div class="contacts_text">
           <div class="contacts-header">Контакты:</div>
           <div class="website">www.geoindicator.com</div>
-          <div class="email">cooperation@geoindicator.com</div>
+          <div class="email">m.shipaeva@geoindicator.com</div>
         </div>
       </div>
     </div>
